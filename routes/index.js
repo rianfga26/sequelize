@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var model = require('../models/index');
+var model = require('../models/users');
 
 /* GET home page. */
 router.get('/:kolom', function(req, res, next) {

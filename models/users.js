@@ -9,28 +9,14 @@ var users = db.define('users',{
         firstName : sequelize.STRING,
         lastName: sequelize.STRING,
         level: sequelize.STRING,
+        umur: sequelize.INTEGER,
+        nomorTelepon: sequelize.INTEGER,
+        alamat: sequelize.STRING,
+        tglLahir: sequelize.STRING
 
     }, {
         timestamps: false,
         freezeTableName: true
     })
 
-
-var product = db.define('product', {
-    product_id: {
-        primaryKey: true,
-        type: sequelize.INTEGER
-    },
-    productName: sequelize.TEXT,
-    user_id: {
-        type: sequelize.INTEGER
-    }
-
-}, {
-    timestamps: false,
-    freezeTableName: true
-})
-
-
-users.belongsTo(product, {foreignKey : 'user_id'})
-module.exports = users,product
+module.exports = users
