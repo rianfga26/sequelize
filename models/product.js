@@ -1,3 +1,6 @@
+var db = require('../config/db');
+var sequelize = require('sequelize');
+
 var product = db.define('product', {
     product_id: {
         primaryKey: true,
