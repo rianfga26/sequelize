@@ -1,0 +1,16 @@
+belajar query sequelize
+
+1. where 
+2. order by
+3. group by 
+4. join table 
+
+
+https://github.com/sequelize/sequelize/issues/4507
+
+Tambah Kolom Pada Table user 
+
+1. Umur 
+2. No Telp 
+3. Alamat 
+4. Tgl Lahir 
